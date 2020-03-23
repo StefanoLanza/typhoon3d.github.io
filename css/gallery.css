@@ -26,27 +26,28 @@ way to fit your requirements.
 .video ul li a img 
 {display:block; width:100px; height:75px; border:2px solid #eee;}
 
-.photo {display:block; width:620px; text-align:left; padding:0; margin:0;  z-index:10;}
+.photo {display:block; width:100%; text-align:left; padding:0; margin:0;  z-index:10;}
 
 /* Box containing photos */
 .photo ul 
-{ list-style:none; padding:0; margin:0; border:0px;}
+{ list-style:none; width: 100%; padding:0; margin:0; border:0px;
+}
 
 /* Thumbnail space*/
 .photo ul li 
-{display:inline; width:142px; height:102px; float:left; border:0px; margin:4px;}
+{display:inline; width:162px; height:92px; float:left; border:0px; margin:2px;}
 
 /* Clickable area with border for photo */
 .photo ul li a 
-{display:block; width:142px; height:102px; cursor:default; text-decoration:none; background:#444; border:1px solid #888;}
+{display:block; width:162px; height:92px; cursor:default; text-decoration:none; background:#444; border:1px solid #888;}
 
 /* Thumbnail image */
 .photo ul li a img 
-{ display:block; width:140px; height:100px; border:1px solid #eee;}
+{ display:block; width:160px; height:90px; border:1px solid #eee;}
 
 /* Zoomed photo, active when hovering over thumbnail */
 .photo ul li a:hover img 
-{ position:relative; left:-10px; top:-10px; width:160px; height:120px; border-color:#fff;}
+{ position:relative; left:-5px; top:-5px; width:170px; height:100px; border-color:#fff;}
 
 
 /* Large photo, invisible when not hovering over small photo */

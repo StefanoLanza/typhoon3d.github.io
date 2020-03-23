@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Typhoon 3D engine for realistic water simulation and rendering"/>
+<title>Water Simulation and Rendering | Typhoon 3D Engine | Features</title>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/google_analytics.js"></script>
+</head>
+<body>
+
+<div id="container">
+ <!--webbot bot="Include" U-Include="newHeader.html" startspan -->
+	<div id="header">
+		<div id="logo"><a href="index.html"></a></div>
+		<div id="rss">
+	      
+	      <!--
+	      <a href="http://www.facebook.com/pages/Typhoon-3D-Engine/118087931598738" accesskey="2" title="Facebook"><img src="media/icons/rss_2.gif" alt="picture" width="16" height="16"/></a>
+	      -->
+	      <a href=""><img src="media/icons/twitter.png" alt="rss" title="Follow us on Twitter" width="16" height="16"/></a>
+	      <a href="mailto:typhoon3d@gmail.com"><img src="media/icons/rss_3.gif" alt="rss" title="Contact us by email" width="16" height="16"/></a>
+		</div>
+<!--	    <div class="clr"></div>-->
+		<div class="menu">
+			<ul>
+				<li><h2><a href="contact.html" accesskey="6" title="Contact Us">Contact Us</a></h2></li>
+				<li><h2><a href="news.html" accesskey="5" title="News">News</a></h2></li>
+				<li><h2><a href="media.html" accesskey="4" title="Media">Media</a></h2></li>
+				<li><h2><a href="download.html" accesskey="3" title="Download">Evaluate</a></h2></li>
+				<li><h2><a href="water.html" accesskey="2" title="Technology">Technology</a></h2></li>
+				<li class="first"><h2><a href="index.html" accesskey="1" title="Home">Home</a></h2></li>
+			</ul>
+<!--			<img src="media/simple_bg.gif"  alt="bg" height="24" />-->
+		</div>
+	</div>
+
+ 
+
+<!--webbot bot="Include" endspan i-checksum="37354" -->
+ 
+<div id="content">
+		<h1>ENGINE FEATURES</h1>
+		<h2>Core&nbsp;</h2>
+		<ul>
+		<li>Modular architecture</li>
+		<li>C++ / Lua interoperability</li>
+		<li>Code reflection</li>
+		<li>Virtual file system</li>
+		<li>Data compression and encryption</li>
+		<li>XML serialization</li>
+		<li>In-game profiler</li>
+		<li>Logging system</li>
+		<li>SSE3 math library</li>
+		</ul>
+		
+          <h2>Component Based</h2>
+          <p>
+Scenes are organized as hierarchies of game objects, which are containers of components and scripts, similarly to Unity. This architecture supports logical hierarchies, prefabricated entities and inheritance. Entities and components can be serialized, exposed to Lua and edited at run time (thanks to our code reflection library). Most components are programmed in C and structured in memory for maximum efficiency.
+		</p>
+		<ul>
+		<li>Support for multiple scenes</li>
+		</ul>
+		
+		<h2>Rendering&nbsp;</h2>
+		<ul>
+		<li>Physically based</li>
+		<li>DirectX 11 backend</li>
+		<li>Custom materials (bumpmapping, relief mapping, procedural animations, etc.)</li>
+		<li>Image filters</li>
+		<li>Adaptive tone mapping </li>
+		<li>SMAA</li>
+		<li>Screen-space lens flare</li>
+		<li>Sprite-based lens flares</li>
+		<li>Ribbon rendering</li>
+		</ul>
+		
+		<h2>Lighting</h2>
+		<ul>
+		<li>Light prepass</li>
+		<li>Directional, point, area lights</li>
+		<li>Real-time rendering of environment probes</li>
+		<li>Real-time, iterative filtering of environment probes</li>
+		<li>Real-time calculation of spherical harmonics</li>
+		<li>Volumetric lighting</li>
+		<li>Cascaded shadowmapping with PCF filtering</li>
+		<li>Sample Distribution Shadow Mapping</li>
+		</ul>
+
+		<h2>Water&nbsp;</h2>
+		<ul>
+		<li>FFT, multi-band wave synthesis</li>
+		<li>Procedural waves</li>
+		<li>Adaptive level of detail</li>
+		<li>Kelvin waves</li>
+		<li>Ship wakes</li>
+		<li>Reflections, refractions, Fresnel, total internal reflection, foam</li>
+		<li>Specular anti-aliasing (baked CLEAN)</li>
+		<li>Whitecaps</li>
+		<li>Real-time, cascaded caustics generation</li>
+		<li>Underwater light attenuation and scattering</li>
+		<li>Underwater ray-marched godrays</li>
+		<li>Underwater volumetric shadows</li>
+<!--		<li>Plankton and bubbles</li>-->
+		<li>Buoyancy simulation</li>
+		<li>Smooth camera transition underwater</li>
+		</ul>
+		
+		<h2>Terrain</h2>
+		<ul>
+		<li>Support for huge view distances</li>
+		<li>Modular geometry synthesis (real world data, procedural layers, filters etc.)</li>
+		<li>Clipmap-based LOD system</li>
+		<li>Progressive geometry refinement based on subdivision surfaces</li>
+		<li>Procedural texturing (ala Terragen)</li>
+		<li>Support for satellite texture maps</li>
+		</ul>
+
+		<h2>Sky</h2>
+		<ul>
+		<li>Hosek-Wilkie model (<a href="http://cgg.mff.cuni.cz/projects/SkylightModelling/">http://cgg.mff.cuni.cz/projects/SkylightModelling</a>)</li>
+		<li>Cloud layers</li>
+		<li>Aerial scattering</li>
+		</ul>
+
+		<h2>Input</h2>
+		<ul>
+		<li>Keyboard, mouse and XBox360 controller support</li>
+		</ul>
+
+		<h2>Physics (based on <a href="http://www.ODE.org">ODE</a>)</h2>
+		<ul>
+		<li>Collision detection</li>
+		<li>Rigid body dynamics</li>
+		<li>Buoyancy simulation</li>
+		</ul>
+
+		<h2>Sound (based on <a href="http://www.fmod.org">FMOD</a>)</h2>
+		<ul>
+		<li>2D sounds</li>
+		<li>3D sound sources</li>
+		<li>Multiple listeners</li>
+		<li>Sound occluders</li>
+		</ul>
+
+<!--
+		<h2>Particles / VFX</h2>
+		<ul>
+		<li>CPU particle simulation (SSE based, cache-friendly)</li>
+		<li>Modular architecture for emitters and affectors</li>
+		<li>2D and 3D particles</li>
+		<li>Dynamic lighting</li>
+		<li>Smooth blending</li>
+		<li>Curve-based control of particle parameters (size, rotation, color, etc.)</li>
+		</ul>
+-->
+		<h2>AI Steering Library</h2>
+		<ul>
+		<li>Boids simulation</li>
+		<li>Path following</li>
+		<li>Obstacle avoidance</li>
+		<li>Wall avoidance</li>
+		</ul>
+		
+		<h2>Scripting</h2>
+		<ul>
+		<li>Character controller</li>
+		<li>Triggers</li>
+		</ul>
+	
+ </div>
+
+ </div>
+
+
+ <!--webbot bot="Include" U-Include="footer.html" startspan -->
+<div id="footer">
+	<p class="right">&copy;2020  <a href="mailto:typhoon3d@gmail.com">Typhoon 3D</a>. All Rights Reserved. </p>
+	<div class="clr"></div>
+</div>
+<!--webbot bot="Include" endspan i-checksum="64163" -->
+
+
+</body>
+</html>
